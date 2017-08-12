@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+   
+    <head>
+        <meta charset="utf-8">
+        <title>Nerds</title>
+    </head>
+    
+    <body>
+          
+        <header class="main-header">
+        	<a class="main-header-logo" href="index.html">
+        		<img src="#" width="200" height="100" alt="Логотип нёрдс">
+        	</a>
+        	<nav class="main-navigation">
+        		<ul class="site-navigation">
+        			<li><a href="#">Студия</a></li>
+        			<li><a href="#">Клиенты</a></li>
+        			<li><a href="#">Магазин</a></li>
+        			<li><a href="#">Контакты</a></li>
+        		</ul>
+        		<ul class="basket">
+        			<li class="basket-link">Корзина</li>
+        		</ul>
+        	</nav>
+        	<section class="slider">
+        		<ul class="slides">
+        			<li class="first-slide">
+        				<img src="#" width="" height="" alt="Первый слайд">
+        				<b>Долго, дорого, скрупулёзно.</b>
+        				<p>Математически выверенный дизайн</p>
+        				<a class="button slide-button">Узнать больше</a>
+        			</li>
+        			<li class="second-slide">
+        				<img src="#" width="" height="" alt="второй слайд">
+        				<b>Любим математику, как никто другой</b>
+        				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+        				<a class="button slide-button">Узнать больше</a>
+        			</li>
+        			<li class="third-slide">
+        				<img src="#" width="" height="" alt="третий слайд">
+        				<b>Только ночь, только хардкор</b>
+        				<p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+        				<a class="button slide-button">Узнать больше</a>
+        			</li>
+        		</ul>
+        		<input type="radio" id="first-slide" name="slide" value="slide1" checked>
+        		<input type="radio" id="second-slide" name="slide" value="slide2">
+        		<input type="radio" id="third-slide" name="slide" value="slide3">
+        	</section>
+        </header>
+        
+        <main>
+        
+        	<section class="services">
+        		<ul class="services-list">
+        			<li class="service-item web-sites">
+        				<h2>Веб-сайты</h2>
+						<p>Мир никогда не будет прежним, когда увидит наш сайт!</p>       			        
+       			        <a class="button web-sites-button">Заказать</a>
+        			</li>
+        			<li class="service-item applications">
+        				<h2>Приложения</h2>
+						<p>Покорите топ-10 приложений в AppStore и Google Play</p>        				
+        				<a class="button applications-button">Заказать</a>
+        			</li>
+        			<li class="service-item presentasions">
+        				<h2>Презентации</h2>
+        				<p>Вы даже не подозреваете, насколько вы изумительны!</p>        				
+        				<a class="button presentasions-button">Заказать</a>
+        			</li>
+        		</ul>
+        	</section>
+        	
+        	<section class="about-us">
+       	   	    <div class="about-us-left">
+        	   	    <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+        	   	    <p>Исповедуем принципы минимализма и чистоты. Ставим маематический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        		    <b>Выполняем заказы на разработку:</b>
+        		    <ul class="left-list">
+        			    <li>веб-сайтов любой сложности</li>
+        			    <li>мобильных приложений для ios и android</li>
+        			    <li>слайдшоу и видео для корпоративных презентаций</li>
+        		    </ul>
+				</div>
+       	        <div class="about-us-right">       	        	
+       	        	<b>С 2004 года любим точность во всем:</b>
+       	        	<table class="right-list">
+       	        		<tr>
+       	        			<td>146%</td>
+       	        			<td>100%</td>
+       	        			<td>50%</td>
+       	        		</tr>
+       	        		<tr>
+       	        		    <td>уровень самоотдачи</td>
+       	        			<td>соблюдение сроков</td>
+       	        			<td>минимальная предоплата</td>
+						</tr>
+       	        	</table>
+       	        </div>
+        	</section>
+        	
+        	<section class="partners">
+        	    <h2 class="hidden">Наши партнёры</h2>
+        		<ul class="partners-list">
+        			<li class="partners-item">html</li>
+        			<li class="partners-item">borodinski</li>
+        			<li class="partners-item">pink</li>
+        			<li class="partners-item">mishka</li>
+        		</ul>
+        	</section>        	        	
+        	        	
+        </main>
+        
+        <footer class="main-footer">
+        	<section class="contacts">
+        		<div class="map">
+        			<img src="" width="" height="" alt="карта">
+        		</div>
+        		<div class="adress">
+        			<h3 class="adress-title">Nёrds Design Studio</h3>
+					<p>191186, Санкт-Петербург,<br>
+       		        ул. Б.Конюшенная,д.19</p>
+       		        <p>тел:+7 812 275 75 75</p>
+       		        <button class="button adress-button">Напишите нам</button>
+        		</div>
+        	</section>
+        	<section class="social">
+        		<div class="social-buttons">
+        			<ul class="social-list">
+        				<li class="social-button">vk</li>
+        				<li class="social-button">fb</li>
+        				<li class="social-button">inst</li>
+        			</ul>
+        		</div>
+        		<div class="frienship">
+        			<b>Давайте дружить, это выгодно!</b>
+        			<p>Скидка 10% для друзей из социальных сетей.</p>
+        		</div>
+        	</section>
+        </footer>
+        
+        <section class="modal">
+            <h2 class="hidden">Напишите нам</h2>
+            <label for="name">Ваше имя:
+            	<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">            	
+            </label>
+            <label for="e-mail">Ваш e-mail:
+            	<input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа">
+            </label>
+            <label for="text">Текс пиьма
+            	<textarea id="text" name="text" placeholder="в свободной форме"></textarea>
+            </label>
+            <button class="button modal-button" type="submit">Отправить</button> 
+		</section>
+        
+    </body>
 </html>
