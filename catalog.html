@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header class="main-header">
-		<a class="main-header-logo" href="index.html">
+		<a class="main-header-logo" href="index.html">Лого Нёрдс 
 			<img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип нёрдс">
 		</a>
 		<nav class="main-navigation">
@@ -25,7 +25,9 @@
 	</header>
 	<main>   
 		<section class="filters">
-			<h2 class="hidden">Фильтры каталога</h2>
+			
+			<h2 class="visually-hidden">Фильтры каталога</h2>
+			
 			<form class="filter" method="get">
 				<fieldset class="price">
 					<legend>Стоимость:</legend>
@@ -35,17 +37,23 @@
 				<fieldset class="grid">
 					<legend>Сетка:</legend>
 					<ul class="grid-buttons">
-						<li>      	           		    
-							<input type="radio" id="adaptive" name="grid-group" value="adaptive" checked>
-							<label for="adaptive">Адаптивная</label>
-						</li>
-						<li>    
-							<input type="radio" id="fixed" name="grid-group" value="fixed">
-							<label for="fixed">Фиксированная</label>
+						<li>
+							<label>
+							    <input type="radio" name="grid-group" value="adaptive" checked>
+							    Адаптивная
+							</label>
 						</li>
 						<li>
-							<input type="radio" class="hidden" id="rubber" name="grid-group" value="rubber">
-							<label for="rubber">Резиновая</label>
+							<label>
+							    <input type="radio" name="grid-group" value="fixed">
+							    Фиксированная
+							</label>
+						</li>
+						<li>
+							<label>
+							    <input type="radio" class="hidden" name="grid-group" value="rubber">
+							    Резиновая
+							</label>
 						</li>    
 					</ul>
 				</fieldset>
@@ -53,24 +61,34 @@
 					<legend>Особенности:</legend>
 					<ul class="particularity-list">
 						<li class="particularity-item">
-							<input type="checkbox" class="particularity-option" id="particularity-slider" name="particularity-slider" checked>
-							<label for="particularity-slider">Слайдер</label>
+							<label>
+							    <input type="checkbox" class="particularity-option" name="particularity-slider" checked>
+							    Слайдер
+							</label>
 						</li>
 						<li class="particularity-item">
-							<input type="checkbox" class="particularity-option" id="particularity-feauters" name="particularity-feauters">
-							<label for="particularity-feauters">Блок преимуществ</label>
+							<label>
+							    <input type="checkbox" class="particularity-option" name="particularity-feauters">
+							    Блок преимуществ
+							</label>
 						</li>
 						<li class="particularity-item">
-							<input type="checkbox" class="particularity-option" id="particularity-news" name="particularity-news" checked>
-							<label for="particularity-news">Новости</label>
+							<label>
+							    <input type="checkbox" class="particularity-option" name="particularity-news" checked>
+							    Новости
+							</label>
 						</li>
 						<li class="particularity-item">
-							<input type="checkbox" class="particularity-option" id="particularity-gallery" name="particularity-gallery">
-							<label for="particularity-gallery">Галерея</label>
+							<label>
+							    <input type="checkbox" class="particularity-option" name="particularity-gallery">
+							    Галерея
+							</label>
 						</li>
 						<li class="particularity-item">
-							<input type="checkbox" class="particularity-option" id="particularity-basket" name="particularity-basket">
-							<label for="particularity-basket">Корзина</label>
+							<label>
+							    <input type="checkbox" class="particularity-option" name="particularity-basket">								
+							    Корзина
+							</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -79,7 +97,9 @@
 		</section>
   	   
 		<section class="catalog">
-			<h2 class="hidden">Каталог</h2>
+			
+			<h2 class="visually-hidden">Каталог</h2>
+			
 			<div class="sorting">
 				<b>Сортировать:</b>
 				<ul class="sort-list">
@@ -148,9 +168,9 @@
   	   
 		<footer class="main-footer">
 			<section class="contacts">
-				<div class="map">
+				<article class="map">
 					<img src="img/map.jpg" width="1440" height="420" alt="карта">
-				</div>
+				</article>
 				<div class="adress">
 					<h3 class="adress-title">Nёrds Design Studio</h3>
 					<p>191186, Санкт-Петербург,<br>
@@ -167,7 +187,7 @@
 						<li class="social-button">inst</li>
 					</ul>
 				</div>
-				<div class="frienship">
+				<div class="friendship">
 					<b>Давайте дружить, это выгодно!</b>
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
@@ -175,15 +195,15 @@
 		</footer>
     
 		<section class="modal">
-			<h2 class="hidden">Напишите нам</h2>
-			<label for="name">Ваше имя:
-				<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">            	
+			<h2 class="visually-hidden">Напишите нам</h2>
+			<label>Ваше имя:
+				<input type="text" name="name" placeholder="Представьтесь, пожалуйста">     	
 			</label>
-			<label for="e-mail">Ваш e-mail:
-				<input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа">
+			<label>Ваш e-mail:
+				<input type="text" name="e-mail" placeholder="Для отправки ответа">
 			</label>
-			<label for="text">Текс пиьма
-				<textarea id="text" name="text" placeholder="в свободной форме"></textarea>
+			<label>Текс пиьма
+				<textarea name="text" placeholder="в свободной форме"></textarea>
 			</label>
 			<button class="button modal-button" type="submit">Отправить</button> 
 		</section>
