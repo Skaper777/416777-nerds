@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-	<link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">	
     <title>Nerds</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>          
     <header class="main-header">
-        <a class="main-header-logo" href="index.html">Лого Нёрдс
+        <a class="main-header-logo" href="index.html">
         	<img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип нёрдс">
         </a>
         <nav class="main-navigation">
@@ -18,7 +19,7 @@
         		<li><a href="#">Контакты</a></li>
         	</ul>
         	<ul class="basket">
-        		<li class="basket-link">Корзина</li>
+				<li class="basket-link"><a href="#">Корзина</a></li>
         	</ul>
         </nav>
         <section class="slider">
@@ -31,7 +32,7 @@
         			    <b>Долго, дорого, скрупулёзно.</b>
 					    <span>Математически выверенный дизайн</span>
         				</p>
-        				<a class="button slide-button">Узнать больше</a>
+        				<a class="button slide-button" href="#">Узнать больше</a>
         			</li>
         			<li class="second-slide">
         			    <figure class="slider-image">
@@ -41,7 +42,7 @@
         				    <b>Любим математику, как никто другой</b>
         				    <span>Никакого креатива, только математические формулы для расчета идеальных пропорций.</span>
         				</p>
-        				<a class="button slide-button">Узнать больше</a>
+        				<a class="button slide-button" href="#">Узнать больше</a>
         			</li>
         			<li class="third-slide">
        				    <figure class="slider-image">
@@ -51,7 +52,7 @@
         				    <b>Только ночь, только хардкор</b>
         				    <span>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</span>
         				</p>
-        				<a class="button slide-button">Узнать больше</a>
+        				<a class="button slide-button" href="#">Узнать больше</a>
         			</li>
         	</ul>
         	<ul class="slider-buttons">
@@ -75,19 +76,19 @@
 			<h2 class="hidden">Услуги</h2>
         	<ul class="services-list">
         		<li class="service-item web-sites">
-        			<h2 class="service-item-title">Веб-сайты</h2>
+        			<h3 class="service-item-title">Веб-сайты</h3>
 					<p>Мир никогда не будет прежним, когда увидит наш сайт!</p>       			        
-       			    <a class="button web-sites-button">Заказать</a>
+       			    <a href="#" class="button web-sites-button">Заказать</a>
         		</li>
         		<li class="service-item applications">
-        			<h2 class="service-item-title">Приложения</h2>
+        			<h3 class="service-item-title">Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>        				
-        			<a class="button applications-button">Заказать</a>
+        			<a href="#" class="button applications-button">Заказать</a>
         		</li>
         		<li class="service-item presentasions">
-        			<h2 class="service-item-title">Презентации</h2>
+        			<h3 class="service-item-title">Презентации</h3>
         			<p>Вы даже не подозреваете, насколько вы изумительны!</p>        				
-        			<a class="button presentasions-button">Заказать</a>
+        			<a href="#" class="button presentasions-button">Заказать</a>
         		</li>
         	</ul>
         </section>
@@ -97,7 +98,7 @@
 			<h2 class="visually-hidden">О нас</h2>
 			
        	   	<div class="about-us-left">
-        	   	<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+        	   	<span>Мы - маленькая, но гордая дизайн-студия из Краснодара.</span>
         	   	<p>Исповедуем принципы минимализма и чистоты. Ставим маематический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         		<b>Выполняем заказы на разработку:</b>
         		<ul class="left-list">
@@ -127,16 +128,24 @@
         	<h2 class="hidden">Наши партнёры</h2>
         	<ul class="partners-list">
         		<li class="partners-item">
+					<a href="#" class="partners-link">
 					<img src="img/logo-1.png" width="200" height="70" alt="html-academy">
+					</a>	
 				</li>
         		<li class="partners-item">
+					<a href="#" class="partners-link">
 					<img src="img/logo-2.jpg" width="209" height="90" alt="Borodinski">
+					</a>
 				</li>
         		<li class="partners-item">
+					<a href="#" class="partners-link">
 					<img src="img/logo-3.png" width="185" height="52" alt="pink">
+					</a>
 				</li>
         		<li class="partners-item">
+					<a href="#" class="partners-link">
 					<img src="img/logo-4.png" width="173" height="84" alt="mishka">
+					</a>	
 				</li>
         	</ul>
         </section>        	        	
@@ -159,9 +168,9 @@
         <section class="social">
         	<div class="social-buttons">
         		<ul class="social-list">
-        			<li class="social-button">vkontakte</li>
-        			<li class="social-button">facebook</li>
-        			<li class="social-button">instagramm</li>
+					<li><a href="#" class="social-button">vkontakte</a></li>
+					<li><a href="#" class="social-button">facebook</a></li>
+					<li><a href="#" class="social-button">instagramm</a></li>
         		</ul>
         	</div>
         	<div class="friendship">
@@ -172,14 +181,14 @@
     </footer>
         
     <section class="modal">
-        <h2 class="hidden">Напишите нам</h2>
-        <label>Ваше имя:
+        <h2>Напишите нам</h2>
+		<label><span>Ваше имя:</span>
             <input type="text" name="name" placeholder="Представьтесь, пожалуйста">          	
         </label>
-        <label>Ваш e-mail:
+		<label><span>Ваш e-mail:</span>
         	<input type="text" name="e-mail" placeholder="Для отправки ответа">
         </label>
-        <label>Текс пиьма
+		<label><span>Текс письма:</span>
             <textarea name="text" placeholder="в свободной форме"></textarea>
         </label>
         <button class="button modal-button" type="submit">Отправить</button> 

@@ -1,9 +1,104 @@
 body {
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
 	font-weight: normal;
-	font-family: roboto;
+	font-family: "Roboto", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.button {
+	font: inherit;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+	opacity: 0.8;
+}
+
+.main-header-logo:focus {
+	opacity: 0.3;
+}
+
+.site-navigation,
+.basket {
+	list-style: none;
+}
+
+.site-navigation a,
+.basket-link a {
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.basket-link a:hover {
+	color: #fb565a;
+}
+
+.site-navigation a:focus,
+.basket-link a:focus {
+	color: #bababa;
+}
+
+.site-navigation a:active,
+.basket-link a:active,
+.current-page {
+	color: #000000;
+	border-bottom: 2px solid #fb565a;
+}
+
+.slides {
+	list-style: none;
+}
+
+.first-slide b,
+.second-slide b,
+.third-slide b {
+	font-size: 55px;
+	line-height: 55px;
+}
+
+.slide-button {
+	background-color: #fb565a;
+	color: white;
+}
+
+.slide-button:hover {
+	background-color: #e74246;
+}
+
+.slide-button:focus {
+	background-color: #d7373b;
+	color: #e37376;
+}
+
+.slider-buttons {
+	list-style: none;
+}
+
+.services-list {
+	list-style: none;
 }
 
 .service-item-title {
@@ -11,7 +106,86 @@ body {
 	line-height: 30px;
 	color: #000000;
 	font-weight: bold;
-	font-family: roboto;
+	font-family: "Roboto", sans-serif;
+}
+
+.web-sites-button {
+	background-color: #fb565a;
+	color: white;
+}
+
+.web-sites-button:hover {
+	background-color: #e74246;
+	color: white;
+}
+
+.web-sites-button:focus {
+	background-color: #d7373b;
+	color: #e37376;
+}
+
+.applications-button {
+	background-color: #00ca74;
+	color: white;
+}
+
+.applications-button:hover {
+	background-color: #00bc6c;
+	color: white;
+}
+
+.applications-button:focus {
+	background-color: #00aa62;
+	color: #4dc491;
+}
+
+.presentasions-button {
+	background-color: #efc84a;
+	color: white;
+}
+
+.presentasions-button:hover {
+	background-color: #eab534;
+	color: white;
+}
+
+.presentasions-button:focus {
+	background-color: #e5a722;
+	color: #edc265;
+}
+
+.about-us b {
+	text-transform: uppercase;
+}
+
+.about-us-left span {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+}
+
+.left-list {
+	list-style: none;
+}
+
+.right-list td {
+	line-height: 18px;
+}
+
+.partners-list {
+	list-style: none;
+}
+
+.partners-link {
+	opacity: 0.2;
+}
+
+.partners-link:hover {
+	opacity: 1.0;
+}
+
+.partners-link:focus {
+	opacity: 0.1;
 }
 
 .adress-title {
@@ -19,7 +193,95 @@ body {
 	line-height: 30px;
 	color: #000000;
 	font-weight: bold;
-	font-family: roboto;
+	font-family: "Roboto", sans-serif;
+}
+
+.adress p {
+	line-height: 18px;
+	color: #cccccc;
+}
+
+.adress-button {
+	background-color: #fb565a;
+	color: white;
+}
+
+.social-list {
+	list-style: none;
+}
+
+.friendship b {
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.friendship p {
+	line-height: 22px;
+	color: #696969;
+}
+
+.modal h2 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.modal label span {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.modal input {
+	font: inherit;
+	border-color: #d7dcde;	
+}
+
+.modal input:hover {
+	border-color: #b4b9bb;
+	outline: none;
+}
+
+.modal input:focus {
+	border-color: #000000;
+	outline: none;
+}
+
+.modal input:invalid {
+	border-color: #e74246;
+	outline: none;
+}
+
+.modal textarea {
+	font: inherit;
+	border-color: #d7dcde;
+}
+
+.modal textarea:hover {
+	border-color: #b4b9bb;
+	outline: none;
+}
+
+.modal textarea:focus {
+	border-color: #000000;
+	outline: none;
+}
+
+.modal textarea:invalid {
+	border-color: #e74246;
+	outline: none;
+}
+
+.modal-button {
+	background-color: #fb565a;
+	color: white;
+}
+
+.modal-button:hover {
+	background-color: #e74246;	
+}
+
+.modal-button:active {
+	background-color: #d7373b;
 }
 
 .page-title {
@@ -27,5 +289,100 @@ body {
 	line-height: 55px;
 	color: black;
 	font-weight: medium;
-	font-family: roboto;
+	font-family: "Roboto", sans-serif;
+}
+
+.price,
+.grid,
+.particularity {
+	border: none;
+}
+
+.price input {
+	border: none;
+	background-color: #eeeeee;
+	color: #7e8386;
+}
+
+.price span {
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #7e8386;
+}
+
+.grid-buttons,
+.particularity-list {
+	list-style: none;
+	line-height: 20x;
+	color: #7e8386;
+}
+
+.grid-buttons span:hover,
+.particularity-list span:hover {
+	color: black;
+}
+
+.grid-buttons span:disabled,
+.particularity-list span:disabled {
+	color: #d0d2d3;
+}
+
+.hidden-button {
+	display: none;
+	color: #d0d2d3;
+}
+
+.filter-button {
+	background-color: #eeeeee;
+}
+
+.filter-button:hover {
+	background-color: #dfdfdf;
+}
+
+.filter-button:active {
+	background-color: #d5d5d5;
+	color: #959595;
+}
+
+.sorting b {
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sort-list {
+	list-style: none;
+}
+
+.sort-option a {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #d1d1d1;
+}
+
+.sort-option a:hover {
+	color: #666666;
+}
+
+.sort-option a:active,
+.sort-option a:focus {
+	color: #444444;
+}
+
+.catalog-item-title {
+	font-size: 18px;
+	line-height: 30px;
+	color: black;
+}
+
+.catalog-modal p {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.catalog-item img:hover {
+	box-shadow: 0 7px 20px 2px #d1d1d1; 
 }

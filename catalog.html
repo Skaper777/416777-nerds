@@ -2,23 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+	<title>catalog</title>
 	<link href="css/style.css" rel="stylesheet">
-    <title>catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
-		<a class="main-header-logo" href="index.html">Лого Нёрдс 
+		<a class="main-header-logo" href="index.html"> 
 			<img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип нёрдс">
 		</a>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li><a href="#">Студия</a></li>
 				<li><a href="#">Клиенты</a></li>
-				<li><a href="#">Магазин</a></li>
+				<li class="current-page"><a href="#">Магазин</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<ul class="basket">
-				<li class="basket-link">Корзина</li>
+				<li class="basket-link"><a href="#">Корзина</a></li>
 			</ul>
 		</nav>
 		<h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -31,8 +32,12 @@
 			<form class="filter" method="get">
 				<fieldset class="price">
 					<legend>Стоимость:</legend>
-					<input type="range" min="0" max="15000" step="1">
-					<p>от <span>0</span> до <span>15000</span></p>    
+					<label><span>От</span>
+					    <input type="text" name="from" placeholder="0">
+					</label>	
+					<label><span>До</span>
+						<input type="text" name="to" placeholder="15000">
+					</label>	
 				</fieldset>
 				<fieldset class="grid">
 					<legend>Сетка:</legend>
@@ -40,19 +45,19 @@
 						<li>
 							<label>
 							    <input type="radio" name="grid-group" value="adaptive" checked>
-							    Адаптивная
+								<span>Адаптивная</span>
 							</label>
 						</li>
 						<li>
 							<label>
 							    <input type="radio" name="grid-group" value="fixed">
-							    Фиксированная
+							    <span>Фиксированная</span>
 							</label>
 						</li>
 						<li>
 							<label>
-							    <input type="radio" class="hidden" name="grid-group" value="rubber">
-							    Резиновая
+							    <input type="radio" class="hidden-button" name="grid-group" value="rubber" disabled>
+							    <span>Резиновая</span>
 							</label>
 						</li>    
 					</ul>
@@ -63,31 +68,31 @@
 						<li class="particularity-item">
 							<label>
 							    <input type="checkbox" class="particularity-option" name="particularity-slider" checked>
-							    Слайдер
+								<span>Слайдер</span>
 							</label>
 						</li>
 						<li class="particularity-item">
 							<label>
 							    <input type="checkbox" class="particularity-option" name="particularity-feauters">
-							    Блок преимуществ
+							    <span>Блок преимуществ</span>
 							</label>
 						</li>
 						<li class="particularity-item">
 							<label>
 							    <input type="checkbox" class="particularity-option" name="particularity-news" checked>
-							    Новости
+							    <span>Новости</span>
 							</label>
 						</li>
 						<li class="particularity-item">
 							<label>
 							    <input type="checkbox" class="particularity-option" name="particularity-gallery">
-							    Галерея
+							    <span>Галерея</span>
 							</label>
 						</li>
 						<li class="particularity-item">
 							<label>
-							    <input type="checkbox" class="particularity-option" name="particularity-basket">								
-							    Корзина
+							    <input type="checkbox" class="particularity-option" name="particularity-basket">	
+							    <span>Корзина</span>
 							</label>
 						</li>
 					</ul>
@@ -201,18 +206,18 @@
 		</footer>
     
 		<section class="modal">
-			<h2 class="visually-hidden">Напишите нам</h2>
-			<label>Ваше имя:
-				<input type="text" name="name" placeholder="Представьтесь, пожалуйста">     	
-			</label>
-			<label>Ваш e-mail:
-				<input type="text" name="e-mail" placeholder="Для отправки ответа">
-			</label>
-			<label>Текс пиьма
-				<textarea name="text" placeholder="в свободной форме"></textarea>
-			</label>
-			<button class="button modal-button" type="submit">Отправить</button> 
-		</section>
+            <h2>Напишите нам</h2>
+		    <label><span>Ваше имя:</span>
+                <input type="text" name="name" placeholder="Представьтесь, пожалуйста">          	
+            </label>
+		    <label><span>Ваш e-mail:</span>
+        	    <input type="text" name="e-mail" placeholder="Для отправки ответа">
+            </label>
+		    <label><span>Текс письма:</span>
+                <textarea name="text" placeholder="в свободной форме"></textarea>
+            </label>
+            <button class="button modal-button" type="submit">Отправить</button> 
+	    </section>
     </main>
 </body>
 </html>
