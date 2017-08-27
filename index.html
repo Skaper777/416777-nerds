@@ -8,72 +8,74 @@
 </head>
 <body>          
     <header class="main-header">
-        <a class="main-header-logo" href="index.html">
-        	<img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип нёрдс">
-        </a>
-        <nav class="main-navigation">
-        	<ul class="site-navigation">
-        		<li><a href="#">Студия</a></li>
-        		<li><a href="#">Клиенты</a></li>
-        		<li><a href="#">Магазин</a></li>
-        		<li><a href="#">Контакты</a></li>
-        	</ul>
-        	<ul class="basket">
-				<li class="basket-link"><a href="#">Корзина</a></li>
-        	</ul>
-        </nav>
-        <section class="slider">
-        	<ul class="slides">
-        		<li class="first-slide">
-        		    <figure class="slider-image">
-        			    <img src="#" width="" height="" alt="Первый слайд">
-					</figure>    
-        			<p>
-        			    <b>Долго, дорого, скрупулёзно.</b>
-					    <span>Математически выверенный дизайн</span>
-        				</p>
-        				<a class="button slide-button" href="#">Узнать больше</a>
-        			</li>
-        			<li class="second-slide">
-        			    <figure class="slider-image">
-        				    <img src="#" width="" height="" alt="второй слайд">
-						</figure>    
-        				<p>
-        				    <b>Любим математику, как никто другой</b>
-        				    <span>Никакого креатива, только математические формулы для расчета идеальных пропорций.</span>
-        				</p>
-        				<a class="button slide-button" href="#">Узнать больше</a>
-        			</li>
-        			<li class="third-slide">
+	    <div class="container">	
+            <nav class="main-navigation">
+			    <a class="main-header-logo" href="index.html">
+        	        <img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип нёрдс">
+                </a>	
+        	    <ul class="site-navigation">
+        		    <li><a href="#">Студия</a></li>
+        		    <li><a href="#">Клиенты</a></li>
+        		    <li><a href="#">Магазин</a></li>
+        		    <li><a href="#">Контакты</a></li>
+        	    </ul>
+        	    <ul class="basket">
+				    <li class="basket-link"><a href="#">Корзина</a></li>
+        	    </ul>				
+            </nav>
+            <section class="slider">			
+			    <ul class="slides">
+				    <li class="slide first-slide">
+					    <figure class="slider-image">
+						    <img src="#" width="" height="" alt="Первый слайд">
+					    </figure>    
+					    <p>
+						    <b>Долго, дорого, скрупулёзно.</b>
+						     <span>Математически выверенный дизайн для вашего сайта или мобильного приложения.</span>
+						     <a class="button slide-button" href="#">Узнать больше</a>
+					    </p>	
+				    </li>
+				    <!--
+                    <li class="slide second-slide">
+                        <figure class="slider-image">
+                            <img src="#" width="" height="" alt="второй слайд">
+                        </figure>    
+	                    <p>
+                            <b>Любим математику, как никто другой</b>
+                            <span>Никакого креатива, только математические формулы для расчета идеальных пропорций.</span>
+                            <a class="button slide-button" href="#">Узнать больше</a>
+                        </p>
+                    </li>
+                    <li class="slide third-slide">
        				    <figure class="slider-image">
-        				    <img src="#" width="" height="" alt="третий слайд">
-						</figure>    
-        				<p>
+        			        <img src="#" width="" height="" alt="третий слайд">
+					    </figure>    
+        			    <p>
         				    <b>Только ночь, только хардкор</b>
-        				    <span>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</span>
-        				</p>
-        				<a class="button slide-button" href="#">Узнать больше</a>
-        			</li>
-        	</ul>
-        	<ul class="slider-buttons">
-       		    <li class="slider-button"> 
-        		    <input type="radio" id="first-slide" name="slide" value="slide1" checked>
-        		</li>
-        		<li class="slider-button">    
-        		    <input type="radio" id="second-slide" name="slide" value="slide2">
-        		</li>
-        		<li class="slider-button">
-        		    <input type="radio" id="third-slide" name="slide" value="slide3">
-        		</li>
-			</ul>
-        </section>
+        				    <span>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</span>        				
+        				    <a class="button slide-button" href="#">Узнать больше</a>
+                        </p> 
+        		    </li>
+                    -->
+        	    </ul>
+        	    <ul class="slider-buttons">
+       		        <li class="slider-button"> 
+        		        <input type="radio" id="first-slide" name="slide" value="slide1" checked>
+        		    </li>
+        		    <li class="slider-button">    
+        		        <input type="radio" id="second-slide" name="slide" value="slide2">
+        		    </li>
+        		    <li class="slider-button">
+        		        <input type="radio" id="third-slide" name="slide" value="slide3">
+        		    </li>
+			    </ul>				
+            </section>
+		</div>	
     </header>        
-    <main>
-			
-	    <h1 class="visually-hidden">Услуги Nerds</h1>
+    <main class="container">   
 			
         <section class="services">
-			<h2 class="hidden">Услуги</h2>
+			<h2 class="visually-hidden">Услуги</h2>
         	<ul class="services-list">
         		<li class="service-item web-sites">
         			<h3 class="service-item-title">Веб-сайты</h3>
@@ -93,9 +95,7 @@
         	</ul>
         </section>
         	
-        <section class="about-us">
-			
-			<h2 class="visually-hidden">О нас</h2>
+        <section class="about-us">		
 			
        	   	<div class="about-us-left">
         	   	<span>Мы - маленькая, но гордая дизайн-студия из Краснодара.</span>
@@ -125,7 +125,7 @@
         </section>
         	
         <section class="partners">
-        	<h2 class="hidden">Наши партнёры</h2>
+        	<h2 class="visually-hidden">Наши партнёры</h2>
         	<ul class="partners-list">
         		<li class="partners-item">
 					<a href="#" class="partners-link">
@@ -152,7 +152,7 @@
         	        	
     </main>
         
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <section class="contacts">
         	<article class="map">
         		<img src="img/map.jpg" width="1440" height="420" alt="карта">
@@ -182,15 +182,21 @@
         
     <section class="modal">
         <h2>Напишите нам</h2>
-		<label><span>Ваше имя:</span>
-            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">          	
-        </label>
-		<label><span>Ваш e-mail:</span>
-        	<input type="text" name="e-mail" placeholder="Для отправки ответа">
-        </label>
-		<label><span>Текс письма:</span>
-            <textarea name="text" placeholder="в свободной форме"></textarea>
-        </label>
+		<p>
+		    <label><span>Ваше имя:</span>
+                <input type="text" name="name" placeholder="Представьтесь, пожалуйста">        	
+        	</label>
+		</p>
+		<p>
+			<label><span>Ваш e-mail:</span>
+        		<input type="text" name="e-mail" placeholder="Для отправки ответа">
+        	</label>
+		</p>
+		<p>
+			<label><span>Текс письма:</span>
+            	<textarea name="text" placeholder="в свободной форме"></textarea>
+        	</label>
+		</p>	
         <button class="button modal-button" type="submit">Отправить</button> 
 	</section>        
 </body>

@@ -7,27 +7,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
-		<a class="main-header-logo" href="index.html"> 
-			<img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип нёрдс">
-		</a>
-		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li class="current-page"><a href="#">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="basket">
-				<li class="basket-link"><a href="#">Корзина</a></li>
-			</ul>
-		</nav>
-		<h1 class="page-title">Магазин готовых шаблонов</h1>
+	<header class="main-header">		
+		<div class="container">	
+            <nav class="main-navigation">
+			    <a class="main-header-logo" href="index.html">
+        	        <img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип нёрдс">
+                </a>	
+        	    <ul class="site-navigation">
+        		    <li><a href="#">Студия</a></li>
+        		    <li><a href="#">Клиенты</a></li>
+        		    <li><a href="#" class="current-page">Магазин</a></li>
+        		    <li><a href="#">Контакты</a></li>
+        	    </ul>
+        	    <ul class="basket">
+				    <li class="basket-link"><a href="#">Корзина</a></li>
+        	    </ul>				
+            </nav>
+			<h1 class="page-title">Магазин готовых шаблонов</h1>
+		</div>		
 	</header>
-	<main>   
+	<main class="container main-container">   
 		<section class="filters">
 			
-			<h2 class="visually-hidden">Фильтры каталога</h2>
+			<h2 class="visually-hidden">Фильтры каталога</h2>		
 			
 			<form class="filter" method="get">
 				<fieldset class="price">
@@ -176,48 +178,48 @@
 				<li class="pagination-item"><a href="#">Следующая</a></li>
 			</ul>
 		</section>
+	</main>	
   	   
-		<footer class="main-footer">
-			<section class="contacts">
-				<article class="map">
-					<img src="img/map.jpg" width="1440" height="420" alt="карта">
-				</article>
-				<div class="adress">
-					<h3 class="adress-title">Nёrds Design Studio</h3>
-					<p>191186, Санкт-Петербург,<br>
+	<footer class="main-footer container">
+		<section class="contacts">
+			<article class="map">
+				<img src="img/map.jpg" width="1440" height="420" alt="карта">
+			</article>
+			<div class="adress">
+				<h3 class="adress-title">Nёrds Design Studio</h3>
+				<p>191186, Санкт-Петербург,<br>
 					ул. Б.Конюшенная,д.19</p>
-					<p>тел:+7 812 275 75 75</p>
-					<button class="button adress-button">Напишите нам</button>
-				</div>
-			</section>
-			<section class="social">
-				<div class="social-buttons">
-					<ul class="social-list">
-						<li class="social-button">vkontakte</li>
-						<li class="social-button">facebook</li>
-						<li class="social-button">instagramm</li>
-					</ul>
-				</div>
-				<div class="friendship">
-					<b>Давайте дружить, это выгодно!</b>
-					<p>Скидка 10% для друзей из социальных сетей.</p>
-				</div>
-			</section>
-		</footer>
+				<p>тел:+7 812 275 75 75</p>
+				<button class="button adress-button">Напишите нам</button>
+			</div>
+		</section>
+		<section class="social">
+			<div class="social-buttons">
+				<ul class="social-list">
+					<li class="social-button">vkontakte</li>
+					<li class="social-button">facebook</li>
+					<li class="social-button">instagramm</li>
+				</ul>
+			</div>
+			<div class="friendship">
+				<b>Давайте дружить, это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</section>
+	</footer>
     
-		<section class="modal">
-            <h2>Напишите нам</h2>
-		    <label><span>Ваше имя:</span>
-                <input type="text" name="name" placeholder="Представьтесь, пожалуйста">          	
-            </label>
-		    <label><span>Ваш e-mail:</span>
-        	    <input type="text" name="e-mail" placeholder="Для отправки ответа">
-            </label>
-		    <label><span>Текс письма:</span>
-                <textarea name="text" placeholder="в свободной форме"></textarea>
-            </label>
-            <button class="button modal-button" type="submit">Отправить</button> 
-	    </section>
-    </main>
+	<section class="modal">
+		<h2>Напишите нам</h2>
+		<label><span>Ваше имя:</span>
+			<input type="text" name="name" placeholder="Представьтесь, пожалуйста">          	
+		</label>
+		<label><span>Ваш e-mail:</span>
+			<input type="text" name="e-mail" placeholder="Для отправки ответа">
+		</label>
+		<label><span>Текс письма:</span>
+			<textarea name="text" placeholder="в свободной форме"></textarea>
+		</label>
+		<button class="button modal-button" type="submit">Отправить</button> 
+	</section>    
 </body>
 </html>
