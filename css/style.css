@@ -571,7 +571,6 @@ a {
 .main-footer {
 	min-height: 100px;
 	padding-bottom: 45px;
-	border-bottom: 1px solid;	
 }
 
 .social {
@@ -621,34 +620,65 @@ a {
 /* modal */
 
 .modal {
-	display: none;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	position: absolute;
+	top: 0px;
+	left: 300px;
 	width: 960px;
 	min-height: 300px;
+	background-color: beige;
+	box-shadow: 0 20px 35px 7px;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;	
 }
 
 .modal p {
-	width: 360px;
+	width: 360px;	
+	padding-left: 100px;
+	margin: 0;
+}
+
+.modal p:nth-of-type(2) {
+	padding-left: 40px;
+	padding-right: 100px;
+	padding-bottom: 37px;
+}
+
+.modal p:last-of-type {
+	width: 900px;
+	padding-bottom: 47px;
 }
 
 .modal h2 {
 	font-size: 45px;
 	line-height: 45px;
-	width: 800px;
+	width: 600px;	
 	height: 50px;
 	padding: 0;
+	padding-left: 100px;
+	padding-top: 73px;
+	padding-bottom: 50px;
 	margin: 0;
 }
 
-.modal label span {
+.modal svg {
+	position: absolute;
+	top: 82px;
+	right: 90px
+}
+
+.modal span {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: bold;
 }
 
 .modal input {
+	box-sizing: border-box;
 	width: 360px;
+	min-height: 46px;
 	font: inherit;
 	border-color: #d7dcde;	
 }
@@ -692,6 +722,11 @@ a {
 .modal-button {
 	background-color: #fb565a;
 	color: white;
+	width: 260px;
+	height: 50px;
+	margin-left: 100px;
+	margin-bottom: 64px;
+	border-radius: 3px;
 }
 
 .modal-button:hover {
