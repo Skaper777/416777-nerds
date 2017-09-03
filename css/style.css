@@ -74,14 +74,27 @@ a {
 
 .site-navigation {
 	display: flex;
-	width: 415px;
-	justify-content: space-between;
+	justify-content: space-around;
+	min-width: 440px;
 }
 
 .site-navigation li {
 	margin-top: 78px;
-	padding-right: 46px;
+	padding-right: 45px;	
 }
+
+.site-navigation li:first-of-type {
+	padding-left: 23px;
+}
+
+.site-navigation li:nth-of-type(2) {
+	padding-right: 48px;
+}
+
+.site-navigation li:last-of-type {
+	padding-right: 0;
+}
+
 
 .basket {
 	display: flex;
@@ -92,19 +105,18 @@ a {
 .basket-link {
 	position: relative;
 	margin-top: 78px;
+	padding-left: 0px;
 }
 
-.basket-link::before {
+.basket-link svg {
 	content: "";	
 	position: absolute;
-	left: -40px;
-	top: 3px;
-	width: 18px;
-	height: 18px;
-	background-color: ;
-	background-image: url("../img/cart-icon.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	left: 10px;
+	top: 3px;	
+}
+
+.basket-link a {
+	padding-left: 50px;
 }
 
 .site-navigation,
@@ -116,6 +128,7 @@ a {
 
 .site-navigation a,
 .basket-link a {
+	padding-bottom: 9px;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -740,6 +753,9 @@ form {
 /* catalog-header */
 
 .page-title {
+	margin: 0;
+	padding-top: 76px;
+	padding-bottom: 108px;
 	align-self: center;
 	font-size: 55px;
 	line-height: 55px;
@@ -748,51 +764,129 @@ form {
 	font-family: "Roboto", sans-serif;
 }
 
-/* main */
+/* main-catalog */
 
 .main-container {
 	display: flex;
+	justify-content: space-between;
 }
 
 /* filters */
 
-.filters {
-	width: 260xp;
+.filter {
+	display: flex;
+	flex-direction: column;	
+	min-width: 260px;
+	margin-top: 13px;
 }
 
-.price,
+.price-filter,
 .grid,
 .particularity {
 	border: none;
-	margin-bottom: 55px;
 }
 
-.price legend {
+/* price */
+
+.price-filter {	
+	min-height: 200px;
+	margin-bottom: 54px;
+}
+
+.price-filter h3 {
+	text-transform: uppercase;
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
+	margin-bottom: 48px
+}
+
+.range-controls {
+	position: relative;
+	height: 78px;
+	margin-bottom: 14px;
+	padding: 1px 22px;
+	background: #eeeeee;
+	border-radius: 5px;	
+}
+
+.range-controls .scale {
+	margin-top: 38px;
+	height: 2px;
+	background: #d7dcde;
+}
+
+.range-controls .bar {
+	height: 2px;
+	background: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid white;
+	border-radius: 50%;
+	background: #ababab;
+	cursor: pointer;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .max-toggle {
+	left: 155px;
+}
+
+.price-controls {
+	white-space: nowrap;
 	text-transform: uppercase;
-	margin-bottom: 60px;
 }
 
-.price input {
-	border: none;
-	background-color: #eeeeee;
-	color: #7e8386;
-}
-
-.price span {
+.price-controls input {
+	width: 60px;
+	padding: 10px 10px;
+	margin-left: 10px;	
+	background: #eeeeee;
 	font-size: 16px;
-	line-height: 22px;
-	text-transform: uppercase;
-	color: #7e8386;
+	border: none;
+	color: #6a7073;
+	text-align: center;
+	border-radius: 3px;
+}
+
+.price-controls .min-price {
+	margin-right: 33px;
+}
+
+/* grid */
+
+.grid {	
+	padding: 0;
+	margin-bottom: 26px;
 }
 
 .grid legend {
+	padding: 0;
+	margin-bottom: 12px;
     font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.grid input {
+	display: none;
+}
+
+.grid-buttons li {
+	display: flex;	
+	padding-bottom: 15px;
+}
+
+.grid-buttons label {
+	position: relative;
+	padding-top: 2px;
+	padding-left: 35px;
 }
 
 .grid-buttons,
@@ -804,29 +898,69 @@ form {
 	padding: 0;
 }
 
+/* particularity */
+
+.particularity {
+	position: relative;
+	padding: 0;
+	margin-bottom: 32px;
+}
+
 .particularity legend {
+	padding: 0;
+	margin-bottom: 14px;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-.grid-buttons span:hover,
-.particularity-list span:hover {
+.particularity label {
+	padding-left: 36px;
+}
+
+.particularity li {
+	padding-bottom: 16px;
+}
+
+.particularity-item input {
+	display: none;
+}
+
+/* interactive icons */
+
+.grid-buttons svg,
+.particularity svg {
+	position: absolute;
+	left: 0;
+	opacity: 0.4;
+}
+
+.grid-buttons svg:hover,
+.particularity svg:hover {
+	opacity: 1.0;
+}
+
+.grid-buttons li:hover,
+.particularity-list li:hover {
 	color: black;
 }
 
-.grid-buttons span:disabled,
-.particularity-list span:disabled {
+.grid-buttons li:disabled,
+.particularity-list li:disabled {
 	color: #d0d2d3;
 }
 
 .hidden-button {
-	display: none;
 	color: #d0d2d3;
 }
 
+/* filter button */
+
 .filter-button {
+	padding: 15px 0;
+	font-weight: bold;
+	border-radius: 3px;
 	background-color: #eeeeee;
 }
 
@@ -846,14 +980,17 @@ form {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 760px;
-	margin-bottom: 60px;
+	margin-top: 58px;
+	margin-bottom: 43px;
 }
+
+/* sorting */
 
 .sorting {
 	display: flex;
 	justify-content: space-between;
 	width: 760px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .sorting b {
@@ -862,14 +999,46 @@ form {
 	text-transform: uppercase;
 }
 
-.sort-list {	
+.sort-list {
+	display: flex;
+	align-items: ;
 	list-style: none;
-	padding: 0;
 	margin: 0;	
 }
 
-.sort-list ul {
-	display: flex;
+.sort-list li {	
+	padding-right: 26px;
+	padding-bottom: 0px
+	
+}
+
+.sort-list li:last-of-type {
+	position: relative;
+	padding-right: 86px;
+}
+
+.sort-list svg {
+	position: absolute;
+	opacity: 0.2;
+}
+
+.sort-list svg:hover {
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+.sort-list svg:active {
+	opacity: 1.0;
+}
+
+.sort-list svg:first-of-type {
+	left: 175px;
+	top: 6px
+}
+
+.sort-list svg:last-of-type {
+	left: 145px;
+	top: 6px;
 }
 
 .sort-option a {
@@ -888,6 +1057,8 @@ form {
 	color: #444444;
 }
 
+/* catalog list */
+
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -895,17 +1066,29 @@ form {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 10px;
 }
 
 .catalog-item {
 	position: relative;
 	width: 360px;
-	min-height: 580px;
-	margin-bottom: 35px;
+	height: 615px;
+	padding-top: 39px;
+	margin-bottom: -4px;
 }
 
-.catalog-item img:hover {
-	box-shadow: 0 7px 20px 2px #d1d1d1; 
+.catalog-item svg {
+	position: absolute;
+	top: 0px;
+	opacity: 0.12;
+}
+
+.catalog-item:hover img {
+	box-shadow: 0 0px 20px 10px #d1d1d1; 
+}
+
+.catalog-item:hover svg {
+	opacity: 1.0;
 }
 
 .catalog-item-title {
@@ -919,54 +1102,95 @@ form {
 .catalog-modal {
 	display: flex;
 	position: absolute;
-	top: 350px;
+	top: 386px;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-wrap: wrap;	
 	background-color: #eeeeee;
 	width: 360px;
-	min-height: 230px;
+	height: 230px;
 }
 
 .catalog-modal h3 {	
 	text-align: center;
-	margin-top: 35px;
-	margin-bottom: 0;
+	margin-top: 27px;
+	margin-bottom: 15px;
 	padding:0;
+}
+
+.catalog-item:first-of-type p {
+	padding: 0 90px;
+}
+
+.catalog-item:nth-of-type(2) p{
+	padding: 0 64px;
+}
+
+.catalog-item:nth-of-type(3) p{
+	padding: 0 84px;
+}
+
+.catalog-item:nth-of-type(4) p{
+	padding: 0 84px;
 }
 
 .catalog-modal p {
 	font-size: 16px;
 	line-height: 18px;
 	text-align: center;
+	padding: 0 73px;
 	margin-top: 0;
+	margin-bottom: 30px;
 }
 
-.catalog-item .modal-button {
-	width: 80px;
-	align-self: center;
-	padding: 20px 62px;
-	border-radius: 4px;
-	margin-bottom: 45px;
+.catalog-item .catalog-button {
+	display: block;
+	width: 200px;
+	padding: 16px 0;
+	margin: 0 auto;
+	background-color: #fb565a;
+	border-radius: 3px;
+	color: white;
 }
 
 /* pagination */
 
 .pagination-list {
-	list-style: none;
-	justify-content: flex-start;
-	padding: 0;
-	margin: 0;
+	display: flex;
+	align-items: center;	
+	padding:0;
+	list-style: none;		
 }
 
-.pagination-list ul {
-	display: flex;
+.pagination-list li {
+	padding-right: 12px;
+}
+
+.pagination-list li:first-of-type {
+	padding-right: 18px;
+}
+
+.pagination-item-current {
+	display: block;
+	padding: 10px 18px;	
+	margin-right: 11px;
+	border: 3px solid #dbdbdb;
+	border-radius: 3px;
 }
 
 .pagination-list a {
+	padding: 16px 20px;
 	background-color: #eeeeee;
 	color: black;
 	text-transform: uppercase;
+	border-radius: 3px;
+} 
+	 
+.pagination-item:last-child a {
+	display: block;
+	padding: 13px 0;
+	width: 260px;
+	text-align: center;
+	
 }
 
 .pagination-list a:hover {
