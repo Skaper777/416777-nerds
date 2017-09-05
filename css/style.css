@@ -207,10 +207,6 @@ a {
 	display: none;
 }
 
-.slide:nth-child(1) {
-	display: block;
-}
-
 .first-slide b,
 .second-slide b,
 .third-slide b {
@@ -237,9 +233,11 @@ a {
 	color: #e37376;
 }
 
+/*slider-buttons*/
+
 .slider-buttons {
 	position: absolute;
-	bottom: 95px;
+	bottom: 105px;
 	left: 50%;
 	width: 200px;
 	height: 10px;
@@ -248,20 +246,47 @@ a {
 	z-index: 100;
 }
 
-.slider-buttons i {
+.slider-buttons label {
+	position: relative;
 	display: inline-block;
-	width: 4px;
-	height: 4px;
-	margin: 0 3px;
+	width: 8px;
+	height: 8px;
+	margin: 0 7px;
 	background: white;
-	border: 3px solid white;
+	border: 5px solid white;
 	vertical-align: top;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
-.slider-buttons .active {
-	background: black;
+.slider input[type=radio] {
+	position: absolute;
+	opacity: 0;
+}
+
+#btn-1:checked ~ .slider-buttons label[for="btn-1"]::before,
+#btn-2:checked ~ .slider-buttons label[for="btn-2"]::before,
+#btn-3:checked ~ .slider-buttons label[for="btn-3"]::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 4px;
+	height: 4px;
+	border: 2px solid #c1c1c1;
+	border-radius: 50%;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+	display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+	display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+	display: block;
 }
 
 /* services */
@@ -533,17 +558,20 @@ a {
 /* map */
 
 .contacts {
-	position: relative;
-	margin-left: 232px;
-	margin-bottom: 62px;
+	position: relative;	
 	width: 1440px;
-	min-height: 416px;	
+	margin-bottom: 68px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 1px;
+	min-height: 416px;
+	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
 }
 
 .adress {
-	position: absolute;
-	top: 54px;
-	left: 140px;
+	margin-top: 53px;
+	margin-left: 140px;
 	width: 319px;
 	min-height: 213px;		
 	background-color: white;
@@ -551,8 +579,9 @@ a {
 
 .adress h3 {
 	text-transform: uppercase;
-	padding-top: 34px;
-	padding-bottom: 8px;
+	margin: 0;
+	padding-top: 52px;
+	padding-bottom: 27px;
 	padding-left: 50px;
 	font-size: 18px;
 	font-family: "Roboto", sans-serif;
