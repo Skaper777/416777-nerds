@@ -36,7 +36,7 @@
 					<h3>Стоимость:</h3>
 					<div class="range-controls">			
 						<div class="scale">
-							<div style="width: 70%;" class="bar"></div>
+							<div style="width: 65%;" class="bar"></div>
 						</div>
 						<div class="toggle min-toggle">
 						</div>
@@ -50,68 +50,24 @@
 				</div>
 				<fieldset class="grid">
 					<legend>Сетка:</legend>
-					<ul class="grid-buttons">
-						<li>							
-							<label>
-								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#4D4D4D" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#4D4D4D" cx="12.5" cy="12.5" r="4.5"/></svg>
-							    <input type="radio" name="grid-group" value="adaptive" checked>
-								<span>Адаптивная</span>
-							</label>
-						</li>
-						<li>							
-							<label>
-								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#4D4D4D" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
-							    <input type="radio" name="grid-group" value="fixed">
-							    <span>Фиксированная</span>
-							</label>
-						</li>
-						<li>
-							<label>
-							    <input type="radio" class="hidden-button" name="grid-group" value="rubber" disabled>
-							    <span>Резиновая</span>
-							</label>
-						</li>    
-					</ul>
+					<input type="radio" id="grid-1" name="grid-group" value="adaptive" checked>
+					<label for="grid-1">Адаптивная</label>		
+					<input type="radio" id="grid-2" name="grid-group" value="fixed">
+					<label for="grid-2">Фиксированная</label>	<input type="radio" id="grid-3" 		class="hidden-button" name="grid-		group" value="rubber" disabled>
+					<label for="grid-3">Резиновая</label>	
 				</fieldset>
 				<fieldset class="particularity">
 					<legend>Особенности:</legend>
-					<ul class="particularity-list">
-						<li class="particularity-item">		
-							<label>
-								<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#4D4D4D" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#4D4D4D" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-							    <input type="checkbox" class="particularity-option" name="particularity-slider" checked>
-								<span>Слайдер</span>
-							</label>
-						</li>
-						<li class="particularity-item">		
-							<label>
-								<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#4D4D4D" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-							    <input type="checkbox" class="particularity-option" name="particularity-feauters">
-							    <span>Блок преимуществ</span>
-							</label>
-						</li>
-						<li class="particularity-item">		
-							<label>
-								<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#4D4D4D" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#4D4D4D" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-							    <input type="checkbox" class="particularity-option" name="particularity-news" checked>
-							    <span>Новости</span>
-							</label>
-						</li>
-						<li class="particularity-item">		
-							<label>
-								<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#4D4D4D" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-							    <input type="checkbox" class="particularity-option" name="particularity-gallery">
-							    <span>Галерея</span>
-							</label>
-						</li>
-						<li class="particularity-item">		
-							<label>
-								<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#4D4D4D" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-							    <input type="checkbox" class="particularity-option" name="particularity-basket">
-							    <span>Корзина</span>
-							</label>
-						</li>
-					</ul>
+					<input type="checkbox" id="check-1" name="particularity-slider" checked>
+					<label for="check-1">Слайдер</label>	   
+					<input type="checkbox" id="check-2" name="particularity-block">
+					<label for="check-2">Блок преимуществ</label> 	
+					<input type="checkbox" id="check-3" name="particularity-news" checked>
+					<label for="check-3">Новости</label>
+					<input type="checkbox" id="check-4" name="particularity-gallery">
+					<label for="check-4">Галерея</label>
+					<input type="checkbox" id="check-5" name="particularity-cart">
+					<label for="check-5">Корзина</label>	
 				</fieldset>
 				<button type="submit" class="filter-button button">Показать</button> 
 			</form>       	              	       	   	   
@@ -132,8 +88,13 @@
 					</li>
 					<li class="sort-option">
 						<a href="#">По названию</a>
+					</li>
+					<a class="sort-buttons">
 						<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+					</a>
+					<a class="sort-buttons"> 
 						<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+					</a>
 					</li>
 				</ul>
 			</div>
@@ -202,19 +163,18 @@
 		</section>
 	</main>	
   	   
-	<article class="contacts">
-		<img src="img/map.jpg" width="1440" height="416" alt="карта">
+	<article class="contacts">		
 		<div class="adress">
 			<h3 class="adress-title">Nёrds Design Studio</h3>
-			<p>191186, Санкт-Петербург,<br>
-				ул. Б. Конюшенная, д. 19/8</p>
+			<p>191186, Санкт-Петербург,	ул. Б. Конюшенная, д. 19/8</p>
 			<p>тел. +7 (812) 275 75 75</p>
 			<button class="button adress-button">Напишите нам</button>
 		</div>
+		<div class="map-marker"></div>
 		<section class="modal">
-        <h2>Напишите нам</h2>
-		<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
-			<form action=""  class="appointment-form"  method="post">
+        	<h2>Напишите нам</h2>
+			<button class="modal-close" type="button">Закрыть<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>			
+			<form action="" class="appointment-form" method="post">
 				<p>
 					<label><span>Ваше имя:</span>
 						<input type="text" name="name" placeholder="Представьтесь, пожалуйста">    	
@@ -226,11 +186,11 @@
 					</label>
 				</p>
 				<p>
-					<label><span>Текс письма:</span>
-						<textarea name="text" placeholder="в свободной форме"></textarea>
+					<label><span>Текст письма:</span>
+						<textarea name="text" placeholder="В свободной форме"></textarea>
 					</label>
 				</p>	
-				<button class="button modal-button" type="submit">Отправить</button>
+				<button class="button modal-button" type="submit">Отправить</button>				
 			</form>	
 		</section>
 	</article>   

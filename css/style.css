@@ -177,10 +177,11 @@ a {
 	line-height: 55px;
 	font-weight: bold;
 	color: black;
-	padding-top: 75px;
+	padding-top: 75px;	
 }
 
 .slide-text p {
+	padding-right: 170px;
 	padding-top: 12px;
 	padding-bottom: 21px;
 }
@@ -457,7 +458,7 @@ a {
 
 .about-us-right b {
 	padding-left: 18px;
-	padding-bottom: 12px;
+	padding-bottom: 8px;
 }
 
 .right-list td {
@@ -475,10 +476,6 @@ a {
 	font-size: 45px;
 	line-height: 10,06px;
 	font-weight: bold;	
-}
-
-.td-text {
-	
 }
 
 /* partners */
@@ -619,7 +616,18 @@ a {
 	margin-left: 50px;
 	background-color: #fb565a;
 	color: white;
-	border-radius: 3px;	
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.adress-button:hover {
+	background: #e74246;
+}
+
+.adress-button:active {
+	background: #d7373b;
+	color: #e37376;
+	outline: none;
 }
 
 /* main-footer */
@@ -655,6 +663,19 @@ a {
 	height: 78px;	
 	border-radius: 50%;
 	background-color: #e1e1e1;
+	font-size: 0;
+}
+
+.social-button:hover {
+	background: #e74246;
+}
+
+.social-button:active {
+	background: #d7373b;	
+}
+
+.social-button:active > svg {
+	opacity: 0.4;
 }
 
 .friendship {
@@ -677,13 +698,14 @@ a {
 
 .modal {
 	display: none;
-	position: absolute;
-	top: -137px;
-	left: 240px;
+	position: fixed;
+	top: 200px;
+	left: 500px;
 	width: 960px;
 	min-height: 300px;
 	background-color: white;
 	box-shadow: 0 20px 35px 7px;
+	z-index: 100;
 }
 
 .appointment-form {
@@ -794,6 +816,7 @@ a {
 	margin-left: 100px;
 	margin-bottom: 84px;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 .modal-button:hover {
@@ -802,6 +825,34 @@ a {
 
 .modal-button:active {
 	background-color: #d7373b;
+}
+
+.modal-close {
+	position: absolute;
+	top: 79px;
+	left: 850px;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	border: 0;
+	cursor: pointer;
+	background: none;
+	outline: none;
+}
+
+.modal-close svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+}
+
+.modal-close svg:hover {
+	opacity: 1;
+}
+
+.modal-close svg:active {
+	opacity: 0.1;
 }
 
 /* catalog-header */
@@ -844,7 +895,7 @@ a {
 
 .price-filter {	
 	min-height: 200px;
-	margin-bottom: 54px;
+	margin-bottom: 57px;
 }
 
 .price-filter h3 {
@@ -888,7 +939,7 @@ a {
 }
 
 .range-controls .max-toggle {
-	left: 155px;
+	left: 160px;
 }
 
 .price-controls {
@@ -898,7 +949,7 @@ a {
 
 .price-controls input {
 	width: 60px;
-	padding: 10px 10px;
+	padding: 8px 10px;
 	margin-left: 10px;	
 	background: #eeeeee;
 	font-size: 16px;
@@ -915,8 +966,11 @@ a {
 /* grid */
 
 .grid {	
+	display: flex;
+	flex-direction: column;
+	position: relative;
 	padding: 0;
-	margin-bottom: 26px;
+	margin-bottom: 34px;
 }
 
 .grid legend {
@@ -928,36 +982,72 @@ a {
 	text-transform: uppercase;
 }
 
-.grid input {
-	display: none;
-}
-
-.grid-buttons li {
-	display: flex;	
-	padding-bottom: 15px;
-}
-
-.grid-buttons label {
+.grid label {
 	position: relative;
 	padding-top: 2px;
 	padding-left: 35px;
+	padding-bottom: 13px;
+	cursor: pointer;
+	color: #7e8386;
 }
 
-.grid-buttons,
-.particularity-list {
-	list-style: none;
-	line-height: 20x;
-	color: #7e8386;
-	margin: 0;
-	padding: 0;
+.grid label:hover {
+	color: black;
+}
+
+.grid label::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 26px;
+	height: 26px;
+	background: url(../img/radio-off.svg) no-repeat 50% 50%;
+	opacity: 0.4;
+}
+
+.grid label:hover::before {
+	opacity: 1.0;
+}
+
+#grid-1:checked + label::before,
+#grid-2:checked + label::before { 
+	content: "";
+	position: absolute;	
+	top: 0px;
+	left: 0px;
+	width: 26px;
+	height: 26px;
+	background: url(../img/radio-on.svg) no-repeat 50% 50%;
+}
+
+#grid-3:disabled + label {
+	color: #eeeeee;
+	cursor: default;
+}
+
+#grid-3:disabled + label::before {
+	opacity: 0.1;
+}
+
+.grid input[type=radio] {
+	position: absolute;
+	opacity: 0;
 }
 
 /* particularity */
 
 .particularity {
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	padding: 0;
 	margin-bottom: 32px;
+}
+
+.particularity input[type=checkbox] {
+	position: absolute;
+	opacity: 0;
 }
 
 .particularity legend {
@@ -966,47 +1056,44 @@ a {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
-	text-transform: uppercase;
+	text-transform: uppercase;	
 }
 
 .particularity label {
+	position: relative;
 	padding-left: 36px;
-}
-
-.particularity li {
 	padding-bottom: 16px;
+	cursor: pointer;
+	color: #7e8386;
 }
 
-.particularity-item input {
-	display: none;
-}
-
-/* interactive icons */
-
-.grid-buttons svg,
-.particularity svg {
-	position: absolute;
-	left: 0;
-	opacity: 0.4;
-}
-
-.grid-buttons li:hover svg,
-.particularity-list li:hover svg {	
-	opacity: 1.0;
-}
-
-.grid-buttons li:hover,
-.particularity-list li:hover {
+.particularity label:hover {
 	color: black;
 }
 
-.grid-buttons li:disabled,
-.particularity-list li:disabled {
-	color: #d0d2d3;
+.particularity label::before {
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 23px;
+	top: 0px;
+	left: -2px;
+	background: url(../img/checkbox-off.svg) no-repeat 50% 50%;
+	opacity: 0.4;
 }
 
-.hidden-button {
-	color: #d0d2d3;
+.particularity label:hover::before {
+	opacity: 1;
+}
+
+#check-1:checked + label::before,
+#check-2:checked + label::before,
+#check-3:checked + label::before,
+#check-4:checked + label::before,
+#check-5:checked + label::before,
+#check-6:checked + label::before {
+	left: 0;
+	background: url(../img/checkbox-on.svg) no-repeat;
 }
 
 /* filter button */
@@ -1044,7 +1131,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 760px;
-	margin-bottom: 50px;
+	margin-bottom: 52px;
 }
 
 .sorting b {
@@ -1055,9 +1142,12 @@ a {
 
 .sort-list {
 	display: flex;
+	position: relative;
 	align-items: ;
 	list-style: none;
-	margin: 0;	
+	margin: 0;
+	margin-top: -2px;
+	margin-right: 3px;
 }
 
 .sort-list li {	
@@ -1066,13 +1156,15 @@ a {
 	
 }
 
-.sort-list li:last-of-type {
-	position: relative;
+.sort-list li:last-of-type {	
 	padding-right: 86px;
 }
 
-.sort-list svg {
+.sort-list .sort-buttons {
 	position: absolute;
+}
+
+.sort-list svg {		
 	opacity: 0.2;
 }
 
@@ -1085,15 +1177,14 @@ a {
 	opacity: 1.0;
 }
 
-.sort-list svg:first-of-type {
-	left: 175px;
-	top: 6px
+.sort-list a:first-of-type {
+	left: 390px;
 }
 
-.sort-list svg:last-of-type {
-	left: 145px;
-	top: 6px;
+.sort-list a:last-of-type {
+	left: 362px;
 }
+	
 
 .sort-option a {
 	font-size: 14px;
@@ -1210,6 +1301,15 @@ a {
 	color: white;
 }
 
+.catalog-button:hover {
+	background: #e74246;
+}
+
+.catalog-button:active {
+	background: #d7373b;
+	color: #e37376;
+}
+
 /* pagination */
 
 .pagination-list {
@@ -1255,13 +1355,8 @@ a {
 	background-color: #dfdfdf;	
 }
 
-.pagination-list a:focus {
+.pagination-list a:active {
 	background-color: #d5d5d5;
 	color: #959595;
 	border-top: 1px solid #bfbfbf;
-}
-
-.pagination-list a:active {
-	background-color: white;
-	border: 1px solid #bfbfbf;
 }
