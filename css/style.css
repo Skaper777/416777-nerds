@@ -895,7 +895,7 @@ a {
 
 .price-filter {	
 	min-height: 200px;
-	margin-bottom: 57px;
+	margin-bottom: 54px;
 }
 
 .price-filter h3 {
@@ -949,7 +949,7 @@ a {
 
 .price-controls input {
 	width: 60px;
-	padding: 8px 10px;
+	padding: 10px 10px;
 	margin-left: 10px;	
 	background: #eeeeee;
 	font-size: 16px;
@@ -970,7 +970,7 @@ a {
 	flex-direction: column;
 	position: relative;
 	padding: 0;
-	margin-bottom: 34px;
+	margin-bottom: 32px;
 }
 
 .grid legend {
@@ -999,7 +999,7 @@ a {
 	content: "";
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: -2px;
 	width: 26px;
 	height: 26px;
 	background: url(../img/radio-off.svg) no-repeat 50% 50%;
@@ -1015,7 +1015,7 @@ a {
 	content: "";
 	position: absolute;	
 	top: 0px;
-	left: 0px;
+	left: -2px;
 	width: 26px;
 	height: 26px;
 	background: url(../img/radio-on.svg) no-repeat 50% 50%;
