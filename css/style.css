@@ -1146,31 +1146,35 @@ a {
 	align-items: ;
 	list-style: none;
 	margin: 0;
-	margin-top: -2px;
-	margin-right: 3px;
+	margin-top: -2px;	
 }
 
-.sort-list li {	
-	padding-right: 26px;
-	padding-bottom: 0px
-	
+.sort-list li:not(:last-of-type) {	
+	padding-right: 25px;
+	padding-bottom: 0px;	
 }
 
-.sort-list li:last-of-type {	
-	padding-right: 86px;
+.sort-list li:nth-of-type(3) {
+	padding-right: 90px
 }
 
-.sort-list .sort-buttons {
+.sort-buttons {
 	position: absolute;
+	left: 361px;
+	width: 40px;
+}
+
+.sort-button:last-of-type {
+	margin-left: 14px;
 }
 
 .sort-list svg {		
 	opacity: 0.2;
+	cursor: pointer;
 }
 
-.sort-list svg:hover {
+.sort-list svg:hover {	
 	opacity: 0.4;
-	cursor: pointer;
 }
 
 .sort-list svg:active {
