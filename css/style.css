@@ -8,7 +8,7 @@ body {
 	line-height: 24px;
 	color: #283136;
 	font-weight: normal;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif, "Arial";
 }
 
 a {
@@ -32,10 +32,13 @@ a {
 /* header */
 
 .main-header {
-	background-color: #eeeeee;	
+	background-color: #eeeeee;
+	width: 100%;
+	min-width: 1200px;
 }
 
 .container {
+	display: block;
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -297,7 +300,7 @@ a {
 	justify-content: space-between;
 	align-items: flex-end;
 	list-style: none;
-	margin-top: 80px;
+	margin-top: 55px;
 	margin-bottom: 0;
 	padding: 0;
 	min-height: 360px;
@@ -315,8 +318,7 @@ a {
 	font-size: 24px;
 	line-height: 30px;
 	color: #000000;
-	font-weight: bold;
-	font-family: "Roboto", sans-serif;
+	font-weight: bold;	
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
@@ -401,13 +403,14 @@ a {
 	min-height: 440px;
 	background: url(../img/nerds-illustration.jpg) no-repeat 100% 13%;
 	padding-bottom: 49px;
-	margin-bottom: 45px;
+	margin-bottom: 22px;
 	border-bottom: 2px solid #eeeeee;
 }
 
 .about-us-left {	
 	width: 660px;
 	padding-top: 75px;
+	margin-left: -140px;
 }
 
 .about-us-left p {
@@ -424,7 +427,7 @@ a {
 .about-us-left span {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: bold;
+	font-weight: 600;	
 }
 
 .left-list {
@@ -453,16 +456,16 @@ a {
 .about-us-right {
 	width: 360px;
 	align-self: flex-end;
-	padding-bottom: 26px;
+	padding-bottom: 24px;
 }
 
 .about-us-right b {
 	padding-left: 18px;
-	padding-bottom: 8px;
+	padding-bottom: 10px;
 }
 
 .right-list td {
-	line-height: 18px;
+	line-height: 18px;	
 	padding-top: 30px;
 	padding-left: 0;
 	padding-right: 20px;
@@ -555,21 +558,24 @@ a {
 /* map */
 
 .contacts {
-	position: relative;	
-	width: 1440px;
-	margin-bottom: 68px;
+	position: relative;
+	width: 100%;
+	min-width: 1200px;
+	margin-bottom: 69px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 1px;
 	min-height: 416px;
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
 .adress {
-	margin-top: 53px;
-	margin-left: 140px;
-	width: 319px;
+	margin-top: 30px;
+	margin-left: 0px;
+	padding: 1px;
+	width: 317px;
 	min-height: 213px;		
 	background-color: white;
 }
@@ -577,11 +583,10 @@ a {
 .adress h3 {
 	text-transform: uppercase;
 	margin: 0;
-	padding-top: 52px;
-	padding-bottom: 27px;
+	padding-top: 51px;
+	padding-bottom: 26px;
 	padding-left: 50px;
-	font-size: 18px;
-	font-family: "Roboto", sans-serif;
+	font-size: 18px;	
 }
 
 .adress p {
@@ -595,13 +600,13 @@ a {
 
 .adress p:last-of-type {
 	padding-top: 18px;
-	padding-bottom: 37px
+	padding-bottom: 36px
 }
 
 .map-marker {
 	position: absolute;
-	top: 87px;
-	left: 820px;
+	top: 89px;
+	left: 1053px;
 	width: 190px;
 	height: 190px;
 	background-image: url(../img/map-marker.png);
@@ -610,14 +615,18 @@ a {
 }
 
 .adress-button {
-	width: 220px;
-	padding: 16px 0;	
-	margin-bottom: 47px;
-	margin-left: 50px;
+	display: block;
+	width: 200px;
+	margin-bottom: 46px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 13px 10px;
 	background-color: #fb565a;
 	color: white;
 	border-radius: 3px;
 	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .adress-button:hover {
@@ -699,8 +708,8 @@ a {
 .modal {
 	display: none;
 	position: fixed;
-	top: 200px;
-	left: 500px;
+	left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
 	width: 960px;
 	min-height: 300px;
 	background-color: white;
@@ -865,8 +874,7 @@ a {
 	font-size: 55px;
 	line-height: 55px;
 	color: black;
-	font-weight: medium;
-	font-family: "Roboto", sans-serif;
+	font-weight: medium;	
 }
 
 /* main-catalog */
@@ -1101,6 +1109,7 @@ a {
 .filter-button {
 	padding: 15px 0;
 	font-weight: bold;
+	font-size: 16px;
 	border-radius: 3px;
 	background-color: #eeeeee;
 }

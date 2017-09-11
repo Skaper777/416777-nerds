@@ -165,37 +165,17 @@
 	</main>	
   	   
 	<article class="contacts">
-		<h2 class="visually-hidden">Контакты</h2>
-		<div class="adress">
-			<h3 class="adress-title">Nёrds Design Studio</h3>
-			<p>191186, Санкт-Петербург,	ул. Б. Конюшенная, д. 19/8</p>
-			<p>тел. +7 (812) 275 75 75</p>
-			<button class="button adress-button">Напишите нам</button>
-		</div>
-		<div class="map-marker"></div>
-		<section class="modal">
-        	<h2>Напишите нам</h2>
-			<button class="modal-close" type="button">Закрыть<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>			
-			<form action="https://up.htmlacademy.ru/htmlcss/18/examination" class="appointment-form" method="post">
-				<p>
-					<label><span>Ваше имя:</span>
-						<input type="text" name="name" placeholder="Представьтесь, пожалуйста">    	
-					</label>
-				</p>
-				<p>
-					<label><span>Ваш e-mail:</span>
-						<input type="text" name="e-mail" placeholder="Для отправки ответа">
-					</label>
-				</p>
-				<p>
-					<label><span>Текст письма:</span>
-						<textarea name="text" placeholder="В свободной форме"></textarea>
-					</label>
-				</p>	
-				<button class="button modal-button" type="submit">Отправить</button>				
-			</form>	
-		</section>
-	</article>   
+		<div class="container">
+			<h2 class="visually-hidden">Контакты</h2>		
+			<div class="adress">
+				<h3 class="adress-title">Nёrds Design Studio</h3>
+				<p>191186, Санкт-Петербург,	ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275 75 75</p>
+				<a class="adress-button">Напишите нам</a>
+			</div>
+			<div class="map-marker"></div>	
+		</div>	
+	</article> 
 	
 	<footer class="main-footer container">
         <section class="social">
@@ -211,6 +191,29 @@
         		<p>Скидка 10% для друзей из социальных сетей.</p>
         	</div>
         </section>
-    </footer>          
+    </footer>
+	
+	<section class="modal">
+        <h2>Напишите нам</h2>
+		<button class="modal-close" type="button">Закрыть<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>			
+		<form action="https://up.htmlacademy.ru/htmlcss/18/examination" class="appointment-form" method="post">
+			<p>
+				<label><span>Ваше имя:</span>
+					<input type="text" name="name" placeholder="Представьтесь, пожалуйста">    	
+				</label>
+			</p>
+			<p>
+				<label><span>Ваш e-mail:</span>
+					<input type="text" name="e-mail" placeholder="Для отправки ответа">
+				</label>
+			</p>
+			<p>
+				<label><span>Текст письма:</span>
+					<textarea name="text" placeholder="В свободной форме"></textarea>
+				</label>
+			</p>	
+			<button class="button modal-button" type="submit">Отправить</button>				
+		</form>	
+	</section>
 </body>
 </html>
