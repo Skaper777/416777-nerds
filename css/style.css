@@ -557,8 +557,7 @@ a {
 
 /* map */
 
-.contacts {
-	position: relative;
+.contacts {	
 	width: 100%;
 	min-width: 1200px;
 	margin-bottom: 69px;
@@ -571,8 +570,7 @@ a {
 	background-position: 50%;
 }
 
-.adress {
-	position: relative;
+.adress {	
 	margin-top: 30px;
 	margin-left: 0px;
 	padding: 1px;
@@ -880,7 +878,7 @@ a {
 /* main-catalog */
 
 .main-container {
-	display: flex;
+	display: flex;	
 	justify-content: space-between;
 }
 
@@ -1150,12 +1148,26 @@ a {
 }
 
 .sort-list {
-	display: flex;
-	position: relative;
-	align-items: ;
+	display: flex;	
 	list-style: none;
 	margin: 0;
 	margin-top: -2px;	
+}
+
+.left-button,
+.right-button {
+	display: block;
+	position: relative;	
+	width: 20px;
+	height: 20px;
+}
+
+.left-button svg,
+.right-button svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate (-50%, -50%) ;
 }
 
 .sort-list li:not(:last-of-type) {	
@@ -1164,17 +1176,7 @@ a {
 }
 
 .sort-list li:nth-of-type(3) {
-	padding-right: 90px
-}
-
-.sort-buttons {
-	position: absolute;
-	left: 361px;
-	width: 40px;
-}
-
-.sort-button:last-of-type {
-	margin-left: 14px;
+	padding-right: 50px
 }
 
 .sort-list svg {		
