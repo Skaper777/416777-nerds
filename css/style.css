@@ -144,14 +144,12 @@ a {
 	color: #fb565a;
 }
 
-.site-navigation a:focus,
-.basket-link a:focus {
+.site-navigation a:active,
+.basket-link a:active {
 	color: #bababa;
 }
 
-.site-navigation a:active,
-.basket-link a:active,
-.current-page {
+.current-page {	
 	color: #000000;
 	border-bottom: 2px solid #fb565a;
 }
@@ -572,6 +570,7 @@ a {
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	background-position: 50%;
+	background-color: #ebffed;
 }
 
 .map-container {
@@ -714,8 +713,8 @@ a {
 /* modal */
 
 .modal {
-	display: none;
-	position: fixed;
+	display: nne;
+	position: fixed;	
 	left: 50%; top: 50%;
 	transform: translate(-50%, -50%);
 	width: 960px;
@@ -757,12 +756,6 @@ a {
 	padding-top: 67px;
 	padding-bottom: 36px;
 	margin: 0;
-}
-
-.modal svg {
-	position: absolute;
-	top: 79px;
-	right: 90px
 }
 
 .appointment-form span {
@@ -846,7 +839,7 @@ a {
 
 .modal-close {
 	position: absolute;
-	top: 79px;
+	top: 89px;
 	left: 850px;
 	width: 21px;
 	height: 21px;
@@ -854,13 +847,9 @@ a {
 	border: 0;
 	cursor: pointer;
 	background: none;
-	outline: none;
 }
 
-.modal-close svg {
-	position: absolute;
-	top: 0;
-	left: 0;
+.modal-close svg {	
 	opacity: 0.3;
 }
 
@@ -911,7 +900,7 @@ a {
 
 .price-filter {	
 	min-height: 200px;
-	margin-bottom: 54px;
+	margin-bottom: 52px;
 }
 
 .price-filter h3 {
@@ -1063,7 +1052,7 @@ a {
 	flex-direction: column;
 	position: relative;
 	padding: 0;
-	margin-bottom: 32px;
+	margin-bottom: 31px;
 }
 
 .particularity input[type=checkbox] {
