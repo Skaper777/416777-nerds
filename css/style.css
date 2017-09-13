@@ -758,6 +758,33 @@ a {
 	margin: 0;
 }
 
+.modal-close {
+	position: absolute;
+	top: 79px;
+	left: 844px;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	border: none;
+	cursor: pointer;
+	background: none;	
+}
+
+.modal-close svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+}
+
+.modal-close svg:hover {
+	opacity: 1;
+}
+
+.modal-close svg:active {
+	opacity: 0.1;
+}
+
 .appointment-form span {
 	display: block;
 	padding-bottom: 10px;
@@ -837,29 +864,7 @@ a {
 	background-color: #d7373b;
 }
 
-.modal-close {
-	position: absolute;
-	top: 89px;
-	left: 850px;
-	width: 21px;
-	height: 21px;
-	font-size: 0;
-	border: 0;
-	cursor: pointer;
-	background: none;
-}
 
-.modal-close svg {	
-	opacity: 0.3;
-}
-
-.modal-close svg:hover {
-	opacity: 1;
-}
-
-.modal-close svg:active {
-	opacity: 0.1;
-}
 
 /* catalog-header */
 
